@@ -1,6 +1,6 @@
 # Sequenicg - თანმიმდევრულად კოდის შესრულება
 # Selection - კოდის შესრულება რაღაცა პირობის მიხედვით კოდების არჩევა შერჩევა ასევე selection-ით მუშაობენ if და else.
-# პიტონსი ინდენტაცია ზალიან მთავარია და მას ჩვენ სხვადასხვა მიზნისთვის ვიყენებთ მაგალითად მრავალხაზიანი კოდი რომ დავიცვM
+# პიტონში ინდენტაცია ძალიან მთავარია და მას ჩვენ სხვადასხვა მიზნისთვის ვიყენებთ მაგალითად მრავალხაზიანი კოდი რომ დავიცვM
 
 
 
@@ -16,7 +16,7 @@ elif Math >= 70 and English >= 70 and Physics >= 70:
     print("კარგი შედეგებია")
     print("სასწავლო წელი წარმატებულია")
 
-elif Math < 50 and English < 50 and Physics < 50:
+elif Math < 50 or English < 50 or Physics < 50:
     print("ერთ-ერთ საგანში დაბალი ქულა გაქვს")
     print("მეტი სწავლა დაგჭირდება")
 
@@ -28,18 +28,18 @@ else:
 
 
 age = int(input("enter your age here: "))
-license = int(input("license(0-False , 1-True)"))
-drunk = int(input("drunk(0-False , 1-True)"))
+license = (input("license(0-False , 1-True)"))
+drunk = input("drunk(0-False , 1-True)")
 
-if age >= 18 and license == True and drunk == False:
+if age >= 18 and license == "yes" and drunk == "no":
     print("შეგიძლია მანქანის მართვა")
     print("უსაფრთხო მგზავრობას გისურვებთ")
 
-elif age >= 18 and license == False and drunk == False:
+elif age >= 18 and license == False and drunk == "no":
     print("ასაკი საკმარისია")
     print("მაგრამ მართვის მოწმობა არ გაქვს")
 
-elif  drunk == True or age < 18 or license == False:
+elif  drunk == "yes" or age < 18 or license == "no":
     print("მანქანის მართვა აკრძალულია")
     print("ეს შეიძლება საშიში იყოს")
 
