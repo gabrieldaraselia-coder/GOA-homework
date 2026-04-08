@@ -1,0 +1,74 @@
+body{
+    background-image: url(georgia-history.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+p{
+    color: white;
+}
+h1{
+     color: rgb(255, 0, 0);
+      font-family: "Press Start 2P", system-ui;
+      font-weight: 400;
+      font-style: normal;
+      text-shadow: 0px 0px 5px rgb(255, 255, 255), 0px -5px 5px red
+     }
+button:hover{
+    background-color: rgb(18, 227, 10);
+}
+button:active{
+    background-color: white;
+}
+a:link{
+    color: lawngreen;
+}
+a:visited{
+    color: rgb(38, 255, 0);
+}
+a:active{
+    color: blue;
+}
+a:hover{
+    color: tomato;
+}
+#box1{
+    width: 750px;
+    height: 275px;
+    background: red;
+    font-size: 225px;
+    text-align: center;
+
+    animation:mySlide , myOpacity , myScale , myColorChange;
+    animation-play-state: running;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+}
+@keyframes mySlide{
+    from{margin-left:0%;}
+    to{margin-left:100%;}
+}
+@keyframes myRotate{
+    100%{transform: rotateX(360deg)}
+    100%{transform: rotateY(360deg)}
+    100%{transform: rotateZ(360deg)}
+}
+
+@keyframes myOpacity{
+    50%{opacity: 0;}
+}
+
+@keyframes myScale{
+    50%{transform:scale(0.5, 0.5) ;}
+}
+
+@keyframes myColorChange{
+    20%{background-color: yellow;}
+    40%{background-color: red;}
+    60%{background-color: tomato;}
+    80%{background-color: blue;}
+    100%{background-color: orange;}
+}

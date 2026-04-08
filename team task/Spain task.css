@@ -1,0 +1,25 @@
+body{
+    background-image: url(maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+p{
+    color: rgb(249, 145, 0);
+}
+h1{
+    color:rgb(255, 255, 0);
+}
+a:link{
+    color: lawngreen;
+}
+a:visited{
+    color: black;
+}
+a:active{
+    color: blue;
+}
+a:hover{
+    color: tomato;
+}
