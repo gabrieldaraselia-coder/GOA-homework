@@ -54,7 +54,7 @@ for i in range(1, 100):
 #   - დათვალეთ რამდენი რიცხვია 1-დან N-მდე, რომელიც იყოფა 3-ზე
 #   - შედეგი დაბეჭდეთ
 
-i = i + 1
+
 n = int(input("enter number here: "))
 
 for i in range(1, n):
