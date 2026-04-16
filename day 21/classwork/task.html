@@ -1,0 +1,37 @@
+<!-- 1) შექმენით რეგისტრაციის ფორმა სადაც მომხმარებელს მოთხოვთ, სახელს, გვარს, ასაკს და მისცემთ საშუალებას ამოირჩიოს რაიმე ჯიშის ძაღლი(radio input) -->
+<html>
+    <body>
+        <h1><strong>SIGN IN</strong></h1>
+        <form>
+            <label for="username">enter your name</label>
+            <input type="text" placeholder="enter your username" name="username">
+            <br><br>
+            <label for="usersurname">enter surname</label>
+            <input type="text" placeholder="enter your usersurname" name="usersurname">
+            <br><br>
+            <label for="userage">enter age</label>
+            <input type="text" placeholder="enter your userage" name="userage">
+            <br><br>
+            <label for="male">breton</label>
+            <input type="radio" placeholder="enter your gender here" name="gender" id="male">
+            <br><br>
+            <label for="female">haski</label>
+            <input type="radio" placeholder="enter your gender here" name="gender" id="female">
+        </form>
+
+
+<!-- არსებულ ფორმას დაუმატეტ სელექტი რომელსის საშუალებითაც მომხმარებელი ამოირჩევს საყვარელ ფილმს. დაამატეთ ლეიბლიც -->
+
+<html>
+    <head>
+        <title>films</title>
+    </head>
+    <body>
+        <label for="films">films</label>
+        <select name="films" id="films">
+            <option value="harry potter">harry potter<option>
+            <option value="matrix">matrix</option>
+            <option value="makulatura">makulatura</option>
+        </select>
+    </body>
+</html>
