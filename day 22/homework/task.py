@@ -23,16 +23,17 @@ print(word)
 # შექმენი სტრინგი: "Programming"
 #   -> დაბეჭდე პირველი 4 სიმბოლო (სლაისინგით)
 programm = "Programming"
-word = programm[0] + programm[1] + programm[2] + programm[3]
-print(word)
+slice = programm[:4]
+print(slice)
 
 
 
 # შექმენი სტრინგი: "Computer"
 #   -> დაბეჭდე ბოლო 3 სიმბოლო (სლაისინგით)
 
-# ეს ვერ გავიგე
-
+string = "computer"
+slice = string[5:]
+print(slice)
 
 
 
@@ -40,15 +41,17 @@ print(word)
 # შექმენი სტრინგი: "HelloWorld"
 # -> დაბეჭდე შუაში არსებული სიმბოლოები (მაგ: loWo)
 
-# ეს ვერ გავიგე
+string = "HelloWorld" 
+slice = string[3:7]
+print(slice)
 
 
 # შექმენი სტრინგი: "Georgia"
 # -> დაბეჭდე 2-დან 5-მდე ინდექსზე არსებული სიმბოლოები
 
 country = "Georgia"
-word = country[1] + country[2] + country[3] + country[4] 
-print(word)
+slice = country[2:5]
+print(slice)
 
 # შექმენი სტრინგი, სადაც ჩაწერ შენს საყვარელ სიტყვას
 # -> თუ პირველი სიმბოლო არის "A":
@@ -66,28 +69,46 @@ else:
 # შექმენი სტრინგი: "Education"
 # -> ამოიღე პირველი და ბოლო სიმბოლო და დაბეჭდე დარჩენილი ნაწილი
 string = "Education"
-word = string[1] + string[2] + string[3] + string[4] + string[5] + string[6] + string[7] 
-print(word)
+slice = string[1:8]
+print(slice)
+
+
+
 # შექმენი სტრინგი: "Developer"
 # -> შეაერთე პირველი 3 და ბოლო 3 სიმბოლო (ახალ სტრინგში) და დაბეჭდე
-String = "Dev"
-string = "per"
-word = String[0] + String[1] + String[2] + string[0] + string[1] + string[2] 
-print(word)
+String = "Developer"
+slice = String[:3] + String[-3:]
+print(slice)
+
+
+
 # შექმენი სტრინგი, სადაც ჩაწერ რაიმე წინადადებას
 # -> დაბეჭდე მხოლოდ პირველი სიტყვა (სლაისინგის გამოყენებით)
-# ეს ვერ გავიგე
+
+string = "apples and bananas"
+slice = string[:6]
+print(slice)
+
+
 
 # შექმენი სტრინგი: "abcdef"
 # -> დაბეჭდე ყოველი მეორე სიმბოლო
 string = "abcdef"  
 word = string[1] + string[3] + string[5]
 print(word) 
+
+
+
 # შექმენი სია, სადაც შეინახავ 8 ელემენტს (ნებისმიერი ტიპის)
 # -> დაბეჭდე შუაში არსებული 4 ელემენტი
 list = [True, "car", 12, 13, 14, True, False, "programm"]
-word = list[2], list[3], list[4], list[5] 
-print (word)
+slice = list[2:6] 
+print (slice)
+
+
+
 # შექმენი სია, სადაც შეინახავ 6 მუსიკოსის სახელს
 # -> დაბეჭდე ბოლო 2 ელემენტი (სლაისინგით)
-#ეს ვერ გავიგე
+musikians = ["Drake", "mozart", "led zeppelin", "michael jackson", "taylor swift", "bruno mars"]
+slice = musikians[-2:]
+print(slice)
