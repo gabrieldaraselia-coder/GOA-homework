@@ -1,0 +1,36 @@
+body{
+    background: black;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-family: "Press Start 2P", system-ui;
+}
+h2{
+    color: white;
+    text-align: center;
+    font-family:"Supermercado One", system-ui;
+}
+h3{
+    text-align: center;
+}
+#safe{
+    color: green;
+}
+#euclid{
+    color:yellow;
+}
+#keter{
+    color:red;
+}
+#Thaumiel{
+    color:skyblue;
+}
+#Apollyon{
+    color: rgb(136, 4, 4);
+}
+img{
+    margin-left: 630px;
+}
+
+
