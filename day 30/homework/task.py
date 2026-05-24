@@ -37,7 +37,9 @@ print(name.count("a"))
 
 # მომხმარებელს შემოატანინეთ წინადადება და ერთი სიმბოლო. count მეთოდის გამოყენებით გაიგეთ რამდენჯერ გვხვდება ეს სიმბოლო წინადადებაში
 word = input("Enter word and symbol here: ")
-print(word.count("hi"))
+symbol = input("Enter symbol: ")
+print(word.count(symbol))
+
 
 
 # მომხმარებელს შემოატანინეთ სახელი და გვარი. title მეთოდის გამოყენებით სწორ ფორმატში დაპრინტეთ ორივე.
