@@ -131,15 +131,44 @@ for i in range(len(name)):
     else:
         word = word + 0
 print(name, word)
-
+print(split)
 # მომხმარებელს შემოატანინეთ წინადადება. პროგრამამ უნდა:
 # - დაყოს ტექსტი სიტყვებად
 # - გამოიტანოს ყველაზე გრძელი სიტყვა
 # - გამოიტანოს ყველაზე მოკლე სიტყვა
-# ვერ გავიეგ
+sentence = input("Enter sentence here: ")
+split = sentence.split()
+min = len(split[0])
+max = len(split[0])
+for i in range(len(split)):
+    if len(split[i]) > max:
+        max = len(split[i])
+    if len(split[i]) < min:
+        min = len(split[i])
+print(min)
+print(max)
 
-# მომხმარებელს შემოატანინეთ რამდენიმე რიცხვი ერთი სტრინგის სახით (მაგ: "10 25 7 90 13"). split მეთოდის გამოყენებით:
+
+#  მომხმარებელს შემოატანინეთ რამდენიმე რიცხვი ერთი სტრინგის სახით (მაგ: "10 25 7 90 13"). split მეთოდის გამოყენებით:
 # - გადააქციეთ ისინი integer-ებად
 # - იპოვეთ ჯამი
 # - იპოვეთ ყველაზე დიდი და ყველაზე პატარა რიცხვი
-# ვერ გავიგე
+string = input("Enter your numbers: ")
+spilt = string.split()
+list = []
+for i in range(len(spilt)):
+    list.append(int(spilt[i]))
+print(list)
+jami = 0
+for i in range(len(list)):
+    jami = jami + list[i]
+print(jami)
+min = list[0]
+max = list[0]
+for i in range(len(list)):
+    if list[i] > max:
+        max = list[i]
+    if list[i] < min:
+        min = list[i]
+print(min)
+print(max)
