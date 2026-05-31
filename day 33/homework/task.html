@@ -1,0 +1,87 @@
+<!-- ახსენით შემდეგი ტეგები: thead, tbody, tfoot -->
+<!-- thead - ცხრილის თავია სადაც სათაურები იწერება -->
+<!-- tbody - ცხრილის მთავარი ნაწილია -->
+<!-- tfoot - ცხრილის ფუტერია-->
+
+<!-- ააგეთ ცხრილი ამ 3 ტეგის გამოყენებით -->
+<html>
+    <head>
+        <title>my table</title>
+    </head>
+    <body>
+        <table style="border:2px red solid;">
+            <thead>
+            <tr>
+                <th style="border:2px red solid;">NAME</th>
+                <th style="border:2px red solid;">SURNAME</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr> 
+                <td style="border:2px red solid;">Gabrieli</td>
+                <td style="border:2px red solid;">Daraselia</td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <tr><td style="border:2px red solid;" colspan="2">From Georgia</td></tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
+
+<!-- რისთვის გვჭირდება rowspan ატრიბუტი? -->
+<!-- rowspan - მიუთითებს თუ რამდენი სტრიქონი უნდა დაიკავოს უჯრამ -->
+
+<!-- რისთვის გვჭირდება colspan ატრიბუტი? -->
+<!-- ცოლსპან - მიუთითებს თუ რამდენი სვეტი უნდა დაიკავოს უჯრამ -->
+
+<!-- ააგეთ შემდეგი ცხრილები -->
+<html>
+    <head>
+        <title>my table</title>
+    </head>
+    <body>
+        <table style="border:2px black solid;">
+            <thead>
+                <tr>
+                    <th style="border:2px black solid;" colspan="2">Student info</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="border:2px black solid;">name</td>
+                    <td style="border:2px black solid;">age</td>
+                </tr>
+                <tr>
+                    <td style="border:2px black solid;">nika</td>
+                    <td style="border:2px black solid;">17</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+
+<html>
+    <head>
+        <title>my table</title>
+    </head>
+    <body>
+        <table style="border:2px black solid;">
+            <thead>
+                <tr>
+                    <th style="border:2px black solid;" colspan="2">Day</th>
+                    <th style="border:2px black solid;" colspan="2">Subject</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="border:2px black solid;" rowspan="2">Monday</td>
+                </tr>
+                <tr>
+                    <td style="border:2px black solid;">Math</td>
+                    <td style="border:2px black solid;">Physics</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
