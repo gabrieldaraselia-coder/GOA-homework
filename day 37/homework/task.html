@@ -1,0 +1,294 @@
+<!-- ახსენით რა არის Tag Selector, Class Selector და ID Selector CSS-ში. მოიყვანეთ თითოეულის მაგალითი -->
+<!-- ისინი გვეხმარება ელემენტების ცალ ცალკე გაფორმებაში -->
+<html>
+    <head>
+        <title>My website</title>
+        <style>
+            .p1{
+                color: red;
+            }
+            #p2{
+                color: blue;
+            }
+            p{
+                color: purple;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="p1">hi</p>
+        <p id="p2">hi</p>
+        <p>hi</p>
+        <p>hi</p>
+    </body>
+</html>
+
+<!-- შექმენით 3 პარაგრაფი.
+   - გამოიყენეთ:
+     - p
+   - ყველა პარაგრაფს მიანიჭეთ:
+     - color: blue;
+     - font-size: 20px; -->
+<html>
+    <head>
+        <title>My website</title>
+        <style>
+            p{
+                color: blue;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>hi</p>
+        <p>hi</p>
+        <p>hi</p>
+    </body>
+</html>
+
+<!-- შექმენით 3 პარაგრაფი.
+   - ორს მიანიჭეთ class:
+     - text
+   - class selector-ის გამოყენებით მიანიჭეთ:
+     - color: green;
+   - დააკვირდით რომელ პარაგრაფებზე იმოქმედებს სტილი. -->
+<html>
+    <head>
+        <title>My website</title>
+        <style>
+            .text{
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="text">hi</p>
+        <p class="text">hi</p>
+        <p>hi</p>
+    </body>
+</html>
+
+
+<!-- შექმენით h1.
+   - მიანიჭეთ id:
+     - title
+   - id selector-ის გამოყენებით მიანიჭეთ:
+     - color: red;
+     - text-align: center; -->
+<html>
+    <head>
+        <title>My website</title>
+        <style>
+            #h11{
+                color: red;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="h11"></h1>
+        <p>hi</p>
+        <p>hi</p>
+        <p>hi</p>
+    </body>
+</html>
+
+
+<!-- შექმენით 2 ღილაკი.
+   - ერთს მიანიჭეთ id:
+     - button1
+   - მეორეს:
+     - button2
+   - ორივეს განსხვავებული ფონი გაუწერეთ id selector-ის გამოყენებით. -->
+<html>
+    <head>
+        <title>My website</title>
+        <style>
+            #button1{
+                background-color: red;
+            }
+            #button2{
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="button1">click me</button>
+        <button id="button2">click me</button>
+    </body>
+</html>
+
+
+ <!-- შექმენით პარაგრაფი.
+   - მიანიჭეთ:
+     - id="demo"
+     - class="paragraph"
+   - CSS-ში გამოიყენეთ:
+     - p
+     - .paragraph
+     - #demo
+   - თითოეულში განსხვავებული color დაწერეთ.
+   - დააკვირდით რომელი ფერი გამოჩნდება საბოლოოდ. -->
+<html>
+    <head>
+        <title>My website</title>
+        <style>
+            p{
+                color: red;
+            }
+            .paragraph{
+                color: blue;
+            }
+            #demo{
+                color: purple;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="demo" class="paragraph">hi</p>
+    </body>
+</html>
+
+
+ <!-- შექმენით 3 ღილაკი.
+    - ყველას მიანიჭეთ class:
+      - btn
+    - class selector-ის გამოყენებით მიანიჭეთ:
+      - background-color: navy;
+      - color: white;
+      - padding: 10px; -->
+<html>
+    <head>
+        <title>My website</title>
+        <style>
+            .btn{
+                background-color: navy;
+                color: white;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="btn">click me</button>
+        <button class="btn">click me</button>
+        <button class="btn">click me</button>
+    </body>
+</html>
+
+
+<!-- შექმენით h1.
+    - მიანიჭეთ id:
+      - main-title
+    - ასევე მიანიჭეთ class:
+      - heading
+    - გამოიყენეთ:
+      - h1
+      - .heading
+      - #main-title
+    - თითოეულში განსხვავებული color დაწერეთ.
+    - დააკვირდით რომელი სტილი იმარჯვებს. -->
+<html>
+    <head>
+        <title>My website</title>
+        <style>
+            h1{
+                color: red;
+            }
+            .heading{
+                color: blue;
+            }
+            #main-title{
+                color: purple;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="main-title" class="heading">hi</h1>
+    </body>
+</html>
+
+
+<!-- შექმენით div, რომლის შიგნით იქნება:
+    - 2 პარაგრაფი
+    - 1 ღილაკი
+    div-ს მიანიჭეთ class:
+    - box
+    - პარაგრაფებს class:
+      - text -->
+<html>
+    <head>
+        <title>My website</title>
+        <style>
+            h1{
+                color: red;
+            }
+            .heading{
+                color: blue;
+            }
+            #main-title{
+                color: purple;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="main-title" class="heading">hi</h1>
+    </body>
+</html>
+
+
+<!-- შექმენით div, რომლის შიგნით იქნება:
+    - 2 პარაგრაფი
+    - 1 ღილაკი
+    div-ს მიანიჭეთ class:
+    - box
+    - პარაგრაფებს class:
+      - text -->
+<html>
+    <head>
+        <title>My website</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <p class="text">hi</p>
+            <p class="text">hi</p>
+            <button>Click me</button>
+        </div>
+    </body>
+</html>
+
+
+ <!-- ყველა განვლილი მასალის გამოყენებით შექმენით ვებსაიტი ჩამოთვლილებიდან რომელიმე თემაზე:
+    - ირმის ნახტომი
+    - ბოცვერი
+    - გარუჯვა
+    - ნისლი
+    - ვარდები -->
+<html>
+    <head>
+        <title>Rose</title>
+        <style>
+            h1{
+                text-align: center;
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Rose</h1>
+        <p>A rose is a type of flowering shrub. Its name comes from the Latin word Rosa.[1]
+        Roses can be seen in many gardens. In a big vineyard, a bush of roses are planted at the end of each row of vines. As long as the roses stay healthy, the vine growers assume their vines are healthy as well. Roses can bloom through summer, adding color to gardens.
+        There are over three hundred species and tens of thousands of cultivars. The flowers of the rose grow in many different colors, from the well-known red rose or yellow rose and sometimes white or purple rose.
+        Rose thorns are actually prickles – outgrowths of the epidermis
+        Roses belong to the family of plants called Rosaceae. All roses were originally wild: they grew in North America, Europe, northwest Africa and many parts of Asia and Oceania. There are over 150 different species of roses. The wild rose species can be grown in gardens, but most garden roses are cultivars, which have been selected by people.[2]
+        Over hundreds of years they have been specially bred to produce a wide variety of growing habits and a broad range of colours from dark red to white including as well yellow and a bluish/lilac colour. Many roses have a strong, pleasant scent.</p>
+        <label for="male">male</label>
+            <br><br>
+            <input type="radio" name="color" id="male" value="m">
+            <br><br>
+            <label for="female">female</label>
+            <input type="radio" name="gender" id="female" value="f">
+    </body>
+</html>
