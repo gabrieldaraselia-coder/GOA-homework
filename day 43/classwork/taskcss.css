@@ -1,0 +1,10 @@
+p{
+    width: 40%;
+    text-decoration-line: underline;
+    text-decoration-color: aqua;
+    text-decoration-style: double;
+}
+div{
+    width: 400px;
+    background-color: red;
+}

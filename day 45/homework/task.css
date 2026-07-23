@@ -1,0 +1,111 @@
+h1{
+    text-align: center;
+    color: rgb(255, 115, 0);
+    text-shadow:
+    0px 1px 20px rgb(255, 115, 0),
+    0px 1px 20px rgb(255, 115, 0),
+    0px 1px 20px rgb(255, 115, 0),
+    0px 1px 20px rgb(255, 115, 0);
+}
+.h1{
+    text-align: center;
+    color: rgb(255, 0, 217);
+    text-shadow:
+    0px 0px 20px rgb(255, 0, 217),
+    0px 0px 20px rgb(255, 0, 217),
+    0px 0px 20px rgb(255, 0, 217),
+    0px 0px 20px rgb(255, 0, 217);
+}
+#h1{
+    color: rgb(139, 139, 255);
+    text-align: center;
+    text-shadow:3px 3px rgb(86, 83, 243),
+    4px 4px rgb(59, 56, 205),
+    5px 5px rgb(34, 32, 152),
+    6px 6px rgb(3, 1, 135),
+    7px 7px rgb(16, 15, 82), 
+    8px 8px rgb(3, 2, 42);
+}
+#h12{
+    color: rgb(118, 130, 131);
+    text-align: center;
+    text-shadow:1px -1px rgb(122, 122, 139),
+    2px -2px rgb(122, 122, 139),
+    3px -3px rgb(122, 122, 139),
+    4px -4px rgb(122, 122, 139),
+    5px -5px rgb(122, 122, 139),
+    6px -6px rgb(122, 122, 139),
+    7px -7px rgb(122, 122, 139), 
+    8px -8px rgb(122, 122, 139);
+}
+#h13{
+    color: red;
+    text-align: center;
+    text-shadow:1px 1px rgb(4, 0, 255),
+    2px 2px rgb(4, 0, 255),
+    3px 3px rgb(4, 0, 255),
+    4px 4px rgb(4, 0, 255), 
+    5px 5px rgb(4, 0, 255);
+}
+#h14{
+    background-color: white;
+    color: black;
+    text-align: center;
+    text-shadow: 0px 0px 25px black;
+}
+
+#h15{
+    background-color: white;
+    color: black;
+    text-align: center;
+    text-shadow: 2px 2px red;
+}
+
+#h16{
+    text-align: center;
+    color: blue;
+    text-shadow:
+    0px 0px 50px blue,
+    0px 0px 50px blue,
+    0px 0px 50px blue,
+    0px 0px 50px blue;
+}
+
+#h17{
+    text-align: center;
+    color: rgb(146, 253, 146);
+    text-shadow:
+    0px 0px 50px rgb(17, 255, 0),
+    0px 0px 50px rgb(17, 255, 0),
+    0px 0px 50px rgb(17, 255, 0),
+    0px 0px 50px rgb(17, 255, 0);
+}
+#h18{
+    color: white;
+    text-align: center;
+    text-shadow:
+    0.5px 0.5px 3px black,
+    0.5px 0.5px 3px black,
+    0.5px 0.5px 3px black,
+    0.5px 0.5px 3px black;
+}
+
+#h19{
+    text-align: center;
+    color: rgb(255, 115, 0);
+    text-shadow:
+    0px 1px 20px rgb(255, 115, 0),
+    0px 1px 20px rgb(255, 115, 0),
+    0px 1px 20px rgb(255, 115, 0),
+    0px 1px 20px rgb(255, 115, 0);
+}
+
+#h20{
+    color: white;
+    text-align: center;
+    text-shadow:
+    0px 0px 4px black,
+    0px 0px 4px black,
+    0px 0px 4px black,
+    0px 0px 4px black;
+}

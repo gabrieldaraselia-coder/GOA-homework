@@ -1,0 +1,150 @@
+names = []
+last_names = []
+subject = []
+Grades = []
+
+
+def add_student():
+    name = input("Enter student's first name: ")
+    last_name = input("Enter student's last name: ")
+    subj = input("Enter subject name here: ")
+    
+    names.append(name)
+    last_names.append(last_name)
+    subject.append(subj)
+    Grades.append(0)  
+    print(f"Student '{name} {last_name}' for subject '{subj}' has been added successfully.")
+
+
+def add_update_grade():
+    name = input("Enter student's first name to give a grade: ")
+    if name in names:
+        index = names.index(name)  
+        full_name = f"{names[index]} {last_names[index]}"
+        
+        grade = int(input(f"Enter grade [1-10] for {full_name} in '{subject[index]}': "))
+        Grades[index] = grade
+        print("Grade added successfully.")
+    else:
+        print("Student not found.")
+
+
+def change_grade():
+    name = input("Enter student's first name to change grade: ")
+    if name in names:
+        index = names.index(name)
+        full_name = f"{names[index]} {last_names[index]}"
+        
+        grade = int(input(f"Enter new grade [1-10] for {full_name} in '{subject[index]}': "))
+        Grades[index] = grade
+        print("Grade updated successfully.")
+    else:
+        print("Student not found. Try again.")
+
+
+def check_status():
+    name = input("Enter student's first name to check status: ")
+    if name in names:
+        index = names.index(name)
+        full_name = f"{names[index]} {last_names[index]}"
+        grade = Grades[index]
+        subj = subject[index]
+        
+        print(f"--- Student Report Card ---")
+        print(f"Student: {full_name}")
+        print(f"Subject: {subj}")
+        print(f"Current Grade: {grade}")
+        
+        if grade < 3:
+            print(f"Status: Left for a Resit/Supplementary exam.")
+        else:
+            print(f"Status: Passed.") 
+    else:
+        print("Student not found.")
+
+
+def remove_student():
+    name_to_remove = input("Enter student's first name to remove: ")
+    if name_to_remove in names:
+        index = names.index(name_to_remove)
+        full_name = f"{names[index]} {last_names[index]}"
+
+        names.pop(index)
+        last_names.pop(index)
+        subject.pop(index)
+        Grades.pop(index)
+        
+        print(f"Student '{full_name}' has been successfully removed from the system.")
+    else:
+        print("Student not found.")
+
+
+def show_top_student():
+    if not names:
+        print("No students in the system yet.")
+        return
+    highest_grade = max(Grades)
+    index = Grades.index(highest_grade)
+    full_name = f"{names[index]} {last_names[index]}"
+    print(f"--- Top Student ---")
+    print(f"Student: {full_name}Subject: {subject[index]}Highest Grade: {highest_grade}")
+
+
+def show_total_students():
+    total = len(names)
+    print(f"Total number of students in the system: {total}")
+
+
+def show_students_by_subject():
+    search_subj = input("Enter subject name to filter: ")
+    found = False
+    print(f"--- Students in '{search_subj}' ---")
+    for index in range(len(subject)):
+        if subject[index].lower() == search_subj.lower():
+            full_name = f"{names[index]} {last_names[index]}"
+            print(f"- {full_name}: Grade {Grades[index]}")
+            found = True
+    if not found:
+        print(f"No students found for subject '{search_subj}'.")
+    print()
+
+
+def main():
+    while True: 
+        print("--- Student Management System ---")
+        print("1 = Add Student (Name, Surname, Subject)")
+        print("2 = Add/Update Grade")
+        print("3 = Change Grade")
+        print("4 = Resit/Supplementary Exam Status")
+        print("5 = Remove Student") 
+        print("6 = Show Top Student")          
+        print("7 = Show Total Count of Students") 
+        print("8 = List Students by Subject")     
+        print("9 = Exit Program") 
+        
+        choice = input("Enter your choice here [1-9]: ")
+        
+        if choice == "1":
+            add_student()
+        elif choice == "2":
+            add_update_grade()
+        elif choice == "3":
+            change_grade()
+        elif choice == "4":
+            check_status()
+        elif choice == "5":
+            remove_student()
+        elif choice == "6":
+            show_top_student()
+        elif choice == "7":
+            show_total_students()
+        elif choice == "8":
+            show_students_by_subject()
+        elif choice == "9": 
+            print("Program closed. Goodbye!")
+            break
+        else:
+            print("Invalid choice! Please choose a valid number.")
+
+
+main()
