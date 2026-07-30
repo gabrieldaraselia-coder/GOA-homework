@@ -9,13 +9,13 @@ set_2 = {2, 3, 5, "cat", "giga"}
 # ეძებს საერთო ელემენტებს
 new_set = set_1.intersection(set_2)
 
-# ეძებს იმ ელემენტებს რომელიც ეძებს ირველი სეტის ელემენტებს
+# ეძებს იმ ელემენტებს რომელიც  პირველი სეტის ელემენტებია
 diff_set = set_1.difference(set_2)
 
 # ეძებს უნიკალურ ელემენტებს
 union_set = set_1.union(set_2)
 
-# ეზებს ყელემეტებს გარდა საერთოებისა
+# ეძებს ელემეტებს გარდა საერთოებისა
 symmetric_diff_set = set_1.symmetric_difference(set_2)
 
 print(new_set)

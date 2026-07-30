@@ -1,0 +1,24 @@
+.link:link{
+    color: red;
+    text-decoration: none;
+}
+.link1:hover{
+    color: blue;
+    text-decoration: none;
+}
+.link2:visited{
+    color: blueviolet;
+    text-decoration: none;
+}
+.link3:active{
+    color: green;
+    text-decoration: none;
+}
+.link4:hover{
+    color: lime;
+    text-decoration: none;
+}
+h1{
+    color: red;
+    text-align: center;
+}
