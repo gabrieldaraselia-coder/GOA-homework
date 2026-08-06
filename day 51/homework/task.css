@@ -1,0 +1,120 @@
+.list li:nth-child(even){
+    color: red;
+    background-color: blue;
+    border: 3px solid green;
+}
+
+.list li:nth-child(odd){
+    color: blue;
+    background-color: red;
+    border: 3px dotted yellow;
+}
+
+.list1 li:first-child{
+    color: green;
+    background-color: yellow;
+    border: 5px dotted red;
+}
+
+.list1 li:last-child{
+    color: black;
+    background-color: red;
+    border: 5px solid blue;
+}
+
+.list2{
+    list-style: disc
+}
+
+.list3{
+    list-style: decimal-leading-zero;
+}
+
+.list4{
+    list-style: circle
+}
+
+.list5{
+    list-style-type: square
+}
+
+.list6{
+    list-style-type: circle
+}
+
+.list7{
+    list-style-type: decimal
+
+}
+
+.list8{
+    list-style-type: upper-roman
+}
+
+.list9{
+    list-style-type: none
+}
+
+.list10 li:nth-child(odd){
+    color: red;
+}
+
+.list10 li:nth-child(even){
+    color: blue;
+}
+
+.list10 li:first-child{
+    color: brown;
+    background-color: cadetblue;
+    border: 3px dotted yellow;
+    list-style: circle;
+}
+
+.list10 li:last-child{
+    color: wheat;
+    background-color: rebeccapurple;
+    border: 3px solid green ;
+    list-style: none;
+}
+
+.list11 li:nth-child(odd){
+    list-style: circle;
+}
+
+.list11 li:nth-child(even){
+    list-style: georgian;
+}
+
+.list11 li:first-child{
+    list-style: decimal;
+}
+
+.list11 li:last-child{
+    list-style: lower-greek;
+}
+
+.list12 li:first-child{
+    color: red;
+    list-style: circle;
+    background-color: chartreuse;
+}
+
+.list12 li:nth-child(2){
+    color: blue;
+    list-style: georgian;
+}
+
+.list12 li:nth-child(3){
+    color: blue;
+    list-style: georgian;
+}
+
+.list12 li:nth-child(4){
+    color: blue;
+    list-style: georgian;
+}
+
+.list12 li:nth-child(5){
+    color: blue;
+    list-style: georgian;
+}
