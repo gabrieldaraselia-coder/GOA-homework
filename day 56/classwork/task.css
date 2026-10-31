@@ -1,0 +1,16 @@
+#box {
+  width: 300px;
+  height: 100px;
+  padding: 20px;
+  border: 5px solid black;
+}
+
+.content-box {
+  background-color: #ffadad;
+  box-sizing: content-box;
+}
+
+.border-box {
+  background-color: #caffbf;
+  box-sizing: border-box;
+}

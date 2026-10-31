@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: transform 1s, ease-in 5s;
+}
+
+.child:hover{
+    transform: rotate(50deg);
+    transform: scale(2,2);
+    background-color: yellow;
+}

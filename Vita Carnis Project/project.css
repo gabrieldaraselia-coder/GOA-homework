@@ -1,0 +1,283 @@
+body{
+    background-color: black;
+}
+
+.h1{
+    color: red;
+    text-align: center;
+    font-size: 75px;
+    font-family: "Creepster", system-ui;
+    font-style: normal;
+}
+
+.form{
+    color: red;
+    text-align: center;
+}
+
+.h2{
+    color: red;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 100px;
+}
+
+.p{
+    color: red;
+    text-align: center;
+    font-size: 10px;
+}
+
+.h11{
+    color: red;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Creepster", system-ui;
+    font-style: normal;
+}
+
+.h21{
+    color: red;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Creepster", system-ui;
+    font-style: normal;
+}
+
+.h3{
+    color: red;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Creepster", system-ui;
+    font-style: normal;
+}
+
+.p1{
+    color: red;
+    text-align: center;
+    font-size: 15px;
+}
+
+.h13{
+    color: red;
+    text-align: center;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.h24{
+    color: red;
+    text-align: center;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.h31{
+    color: red;
+    text-align: center;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.h14{
+    color: red;
+    text-align: center;
+    font-family: "Supermercado One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.h25{
+    color: red;
+    text-align: center;
+    font-family: "Supermercado One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.h32{
+    color: red;
+    text-align: center;
+    font-family: "Supermercado One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.p12{
+    color: red;
+    text-align: center;
+    font-family: "Supermercado One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.p13{
+    color: red;
+    text-align: center;
+    font-family: "Supermercado One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.h15{
+    color: red;
+    text-align: center;
+    font-size: 200px;
+    font-family: "Creepster", system-ui;
+}
+
+.a2{
+    color: red;
+    margin-left: 650px;
+    font-size: 50px;
+    font-family: "Creepster", system-ui;
+    text-decoration: none;
+}
+
+.a3{
+    color: red;
+    margin-left: 50px;
+    font-size: 50px;
+    font-family: "Creepster", system-ui;
+    text-decoration: none;
+}
+
+.a2:hover{
+    color: orangered;
+}
+
+.a3:hover{
+    color: green;
+}
+
+.h16{
+    color: red;
+    text-align: center;
+    font-size: 200px;
+    font-family: "Creepster", system-ui;
+}
+
+.h17{
+    color: red;
+    text-align: center;
+    font-family: "Nosifer", sans-serif;
+    font-weight: 400;    
+}
+
+.h26{
+    color: red;
+    text-align: center;
+    font-family: "Nosifer", sans-serif;
+    font-weight: 400; 
+}
+
+.h33{
+    color: red;
+    text-align: center;
+    font-family: "Nosifer", sans-serif;
+    font-weight: 400; 
+}
+
+.p14{
+    text-align: center;
+    color: red;
+}
+
+.p15{
+    text-align: center;
+    color: red;
+}
+
+.p16{
+    text-align: center;
+    color: red;
+}
+
+.h18{
+    color: red;
+    text-align: center;
+    font-family: "Mystery Quest", system-ui;
+    font-weight: 400;
+}
+
+.h27{
+    color: red;
+    text-align: center;
+    font-family: "Mystery Quest", system-ui;
+    font-weight: 400;  
+}
+
+.h34{
+    color: red;
+    text-align: center;
+    font-family: "Mystery Quest", system-ui;
+    font-weight: 400;
+}
+
+.p17{
+    color: red;
+    text-align: center;
+    font-family: "Mystery Quest", system-ui;
+    font-weight: 400;
+}
+
+.p18{
+    color: red;
+    text-align: center;
+    font-family: "Mystery Quest", system-ui;
+    font-weight: 400;
+}
+
+.a5{
+    color: red;
+    margin-left: 700px;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.a5:hover{
+    color: green;
+    font-family: "Creepster", system-ui;
+}
+
+.h19{
+    color: red;
+    font-family: "Creepster", system-ui;
+    text-align: center;
+    font-size: 100px;
+}
+
+.h110{
+    color: red;
+    font-family: "Flavors", solid;
+    font-weight: 400;
+    text-align: center;
+}
+
+.h111{
+    color: red;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    text-align: center;   
+}
+
+.ol1 li{
+    color: red;
+    margin-left: 650px;
+    text-decoration: none;
+}
+
+.ol1 li:hover{
+    color: green;
+}
+
+video {
+    width: 700px;
+    height: 700px;
+    margin-left: 400px;
+}
+
+

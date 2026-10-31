@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e0e8ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.card {
+    background-color: #ffffff;
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    border-radius: 15px;
+}
+
+.hero-image {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-content {
+    padding: 40px 30px;
+}
+
+.title {
+    color: #1f2f56;
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 18px;
+}
+
+.description {
+    color: #7280a7;
+    font-size: 13px;
+    margin-bottom: 25px;
+    padding: 0 10px;
+}
+
+.plan-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f7ff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.plan-details {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.music-icon {
+    border-radius: 50%;
+}
+
+.plan-text {
+    text-align: left;
+}
+
+.plan-title {
+    color: #1f2f56;
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.plan-price {
+    color: #7280a7;
+    font-size: 15px;
+    margin-top: 3px;
+}
+
+.change-link {
+    color: #3829e0;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: underline;
+    margin-left: 50px;
+}
+
+.change-link:hover {
+    text-decoration: none;
+    color: #766cf1;
+}
+
+.btn-primary {
+    background-color: #3829e0;
+    color: #ffffff;
+    border: none;
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 900;
+    box-shadow: 0 15px 20px rgba(56, 41, 224, 0.2);
+    margin-bottom: 25px;
+    font-family: inherit;
+}
+
+.btn-primary:hover {
+    background-color: #766cf1;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #7280a7;
+    border: none;
+    font-size: 15px;
+    font-weight: 900;
+    font-family: inherit;
+}
+
+.btn-secondary:hover {
+    color: #1f2f56;
+}

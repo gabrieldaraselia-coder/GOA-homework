@@ -1,0 +1,149 @@
+<!-- ახსენით, რას ნიშნავს box-sizing property და რა გავლენას ახდენს ის ელემენტის ზომის გამოთვლაზე. -->
+<!-- box-sizing - თვისება განსაზღვრავს, თუ როგორ გამოითვლება ელემენტის სრული სიგანე და სიმაღლე-->
+
+<!-- ახსენით, რა განსხვავებაა შემდეგ ორ მნიშვნელობას შორის:
+   - box-sizing: content-box;
+   - box-sizing: border-box; -->
+<!-- box-sizing: content-box - მითითებული სიგანე და სიგრძე ეხება მხოლოდ შიგთავსს. -->
+<!-- box-sizing: border-box; - მითითებული სიგანე და სიგრძე მოიცავს შიგთავსს, padding-ს და border-ს ერთად. -->
+
+<!-- შექმენით div, რომელსაც ექნება:
+   - width: 300px;
+   - height: 150px;
+   - padding: 20px;
+   - border: 5px solid;
+
+   თავდაპირველად გამოიყენეთ:
+   - box-sizing: content-box;
+
+   შემდეგ შეცვალეთ:
+   - box-sizing: border-box;
+
+   ახსენით, როგორ შეიცვალა ელემენტის საბოლოო ზომა. -->
+
+<html>
+    <head>
+        <title>My website</title>
+        <link rel="stylesheet" href="task.css">
+    </head>
+    <body>
+        <!-- content-box-ის გამო ელემენტი ზომაზე უფრო დიდი გამოვიდა ეკრანზე. -->
+        <div class="div">
+            <p>Hi</p>
+        </div>
+
+
+        <!-- შექმენით ორი ერთნაირი div.
+        ორივეს მიანიჭეთ:
+        - width: 300px;
+        - height: 200px;
+        - padding: 20px;
+        - border: 5px solid;
+        - პირველ div-ს გამოიყენეთ box-sizing: content-box;
+        - მეორე div-ს გამოიყენეთ box-sizing: border-box;
+        შეადარეთ მათი საბოლოო სიგანე და სიმაღლე. -->
+
+        <!-- საბოლოო სიგანე - 300px და საბოლოო სიმაღლე - 200px-->
+        <div class="div2">
+            <p>Hi</p>
+        </div>
+
+        <!-- საბოლოო სიგანე - 250.400px და საბოლოო სიმაღლე - 150.400px-->
+        <div class="div3">
+            <p>Hi</p>
+        </div>
+
+
+        <!-- ახსენით, რა ნაწილებისგან შედგება CSS box model:
+        - content - ელემენტის გული სადაც თავსდება რეალური შინაარსი
+        - padding - სივრცე შიგთავსსა და ჩარჩოს შორის. ის იღებს ელემენტის ფონის ფერს
+        - border - ხაზი, რომელიც გარს ერტყმის padding-სა და content-ს.
+        - margin - ის გამოყოფს ელემენტს მეზობელი ელემენტებისგან
+
+        ასევე ახსენით, რომელი ნაწილები შედის ელემენტის width-სა და height-ში content-box და border-box შემთხვევებში. -->
+        <!-- content-box - Content-->
+        <!-- border-box	- Content + Padding + Border-->
+
+
+        <!-- შექმენით სამი div, რომელთა სიგანე იქნება 300px.
+        - პირველს გამოიყენეთ box-sizing: content-box;
+        - მეორეს გამოიყენეთ box-sizing: border-box;
+        - მესამეს საერთოდ არ მიუთითოთ box-sizing.
+        თითოეულს დაუმატეთ განსხვავებული padding და border.
+        ახსენით, რომელი ელემენტის საბოლოო ზომა განსხვავდება და რატომ. -->
+
+        <!-- div4 - 300px + 20px + 4px = 324px -->
+        <div class="div4">
+            <p>Hi</p>
+        </div>  
+
+        <!-- div5 - 300px -->
+        <div class="div5">
+            <p>Hi</p>
+        </div>
+
+        <!-- dic6 - 300px + 30px + 6px = 336px -->
+        <div class="div6">
+            <p>Hi</p>
+        </div>
+
+
+        <!-- შექმენით ფორმა, რომელშიც იქნება:
+
+        - სახელის ველი — type=text
+        - გვარის ველი — type=text
+        - ელფოსტის ველი — type=email
+        - პაროლის ველი — type=password
+        - გაგზავნის ღილაკი — type=submit
+
+        გამოიყენეთ input[type=text] და მხოლოდ ტექსტურ ველებზე დააყენეთ:
+
+        - width: 300px;
+        - padding: 15px;
+        - border: 3px solid;
+        - box-sizing: border-box -->
+
+        <form>
+            <input type="text" placeholder="name">
+            <br>
+            <input type="text" placeholder="surname">
+            <br>
+            <input type="email" placeholder="email">
+            <br>
+            <input type="password" placeholder="password">
+            <br>
+            <input type="submit" value="submit">
+        </form>
+
+
+        <!-- შექმენით div, რომლის სიგანე იქნება 400px.
+        გამოიყენეთ:
+        - padding: 30px;
+        - border: 10px solid;
+        - box-sizing: border-box;
+        შეამოწმეთ ბრაუზერში ელემენტის საბოლოო სიგანე და ახსენით, რატომ რჩება ის 400px. -->
+        
+        <!-- box-sizing: border-box-ის გამოყენებისას ბრაუზერი width: 400px-ში ერთიანად მოიაზრებს შიგთავსს, შიდა დაშორებას და ჩარჩოს -->
+        <div class="div7">
+            hi
+        </div>
+
+
+        <!-- შექმენით ორი ტექსტური ველი, რომელთა სიგანე იქნება 100%.
+        ორივეს დაუმატეთ:
+        - padding: 15px;
+        - border: 3px solid;
+
+        - პირველ ველს გამოიყენეთ box-sizing: content-box;
+        - მეორე ველს გამოიყენეთ box-sizing: border-box;
+        ახსენით, რატომ შეიძლება პირველი ველი მშობელი ელემენტის სიგანეს გადააჭარბოს, ხოლო მეორე — არა. -->
+
+        <!-- პირველი ველი - width: 100% ნიშნავს, რომ მხოლოდ შიგთავსის სიგანე გახდება მშობელი ელემენტის სიგანის ტოლი ამას გარედან დაემატება padding და border -->
+        <!-- მეორე ველი - border-box-ის დროს width: 100% მოიცავს როგორც შიგთავსს, ასევე padding-ს და border-ს. ბრაუზერი 36px-s შეიყვანს 100%-ის შიგნით და ამის ხარჯზე დააპატარავებს უშუალოდ ტექსტის ჩასაწერ ადგილს. -->
+         <form class="form">
+        <input type="text" class="input-1" placeholder="content-box">
+        <br>
+        <input type="text" class="input-2" placeholder="border-box">
+    </form>
+    </body>
+</html>

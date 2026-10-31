@@ -1,0 +1,151 @@
+<!-- 1) ახსენით, რას ნიშნავს display property და რა გავლენას ახდენს ის HTML ელემენტის განლაგებაზე. -->
+<!-- display თვისება CSS-ში განსაზღვრავს, თუ როგორ გამოჩნდება HTML ელემენტი ვებ-გვერდზე და როგორ განთავსდება ის სხვა ელემენტების მიმართ. ის აკონტროლებს ელემენტის სტრუქტურულ ქცევას — დაიკავებს თუ არა ის მთლიან ხაზს, განთავსდება გვერდიგვერდ თუ საერთოდ დამალული იქნება. -->
+
+
+<!-- 2) ახსენით, რა განსხვავებაა შემდეგ display მნიშვნელობებს შორის:
+
+- display: block;
+- display: inline;
+- display: inline-block; -->
+<!-- display: block; — ელემენტი ყოველთვის იწყება ახალი ხაზიდან და იკავებს მშობელი ელემენტის მთლიან სიგანეს . მასზე სრულად მოქმედებს სიგანე, სიმაღლე დაშორებები. -->
+<!-- display: inline; — ელემენტი რჩება იმავე ხაზზე და იკავებს მხოლოდ იმ სიგანეს, რაც მის შიგთავსს სჭირდება. მასზე არ მოქმედებს width და height. margin-top და margin-bottom არ აწვება სხვა ელემენტებს ვერტიკალურად. -->
+<!-- display: inline-block; — ელემენტი რჩება იმავე ხაზზე, თუმცა იღებს block ელემენტის თვისებებს: მასზე სრულად მოქმედებს width, height, margin და padding. -->
+
+
+<!-- 3) შექმენით სამი span ელემენტი.
+
+თითოეულს მიანიჭეთ:
+- width: 150px;
+- height: 100px;
+- padding: 20px;
+- background-color;
+
+შემდეგ გამოიყენეთ:
+- პირველზე display: inline;
+- მეორეზე display: inline-block;
+- მესამეზე display: block;
+
+შეადარეთ მათი ზომები და განლაგება. -->
+<html>
+<head>
+    <style>
+        span {
+            width: 150px;
+            height: 100px;
+            padding: 20px;
+            background-color: lightblue;
+        }
+
+        .span-inline {
+            display: inline;
+        }
+
+        .span-inline-block {
+            display: inline-block;
+        }
+
+        .span-block {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <span class="span-inline">first</span>
+    <span class="span-inline-block">second</span>
+    <span class="span-block">third</span>
+</body>
+
+
+
+<!-- 4) ახსენით, რომელი მახასიათებლები აქვს block ელემენტს:
+
+მოიყვანეთ block ელემენტების მაგალითები. -->
+<!-- ყოველთვის იწყება ახალი ხაზიდან.
+ავტომატურად იკავებს ხელმისაწვდომი სიგანის 100%-ს.
+სრულად ემორჩილება width, height, margin და padding თვისებებს. -->
+
+<!-- მაგალითები:
+<div>, <p>, <h1> – <h6>, <header>, <footer>, <section>, <ul>, <li> -->
+
+<!-- 5) ახსენით, რომელი მახასიათებლები აქვს inline ელემენტს:
+
+მოიყვანეთ inline ელემენტების მაგალითები. -->
+<!-- არ იწყება ახალი ხაზიდან, თავსდება სხვა ელემენტების გვერდით.
+სიგანე და სიმაღლე დამოკიდებულია მხოლოდ შიგნით არსებულ ტექსტზე/კონტენტზე.
+width და height თვისებები მასზე არ მუშაობს.
+
+მაგალითები:
+<span>, <a>, <strong>, <em>, <b>, <i> -->
+
+
+<!-- 6) შექმენით სამი div ერთმანეთის გვერდით განთავსებისთვის.
+
+თითოეულს მიანიჭეთ:
+- width: 150px;
+- height: 100px;
+- background-color;
+- margin: 10px;
+
+თავდაპირველად დატოვეთ div ელემენტები ჩვეულებრივი block ქცევით.
+
+შემდეგ გამოიყენეთ:
+- display: inline-block;
+
+ახსენით, როგორ შეიცვალა ელემენტების განლაგება. -->
+<head>
+    <style>
+        .box {
+            width: 150px;
+            height: 100px;
+            background-color: coral;
+            margin: 10px;
+            display: inline-block; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+
+</body>
+</html>
+<!-- ჩვეულებრივი ქცევით: სამივე div განთავსებული იყო ერთმანეთის ქვეშ, რადგან div ბუნებრივად ბლოკური ელემენტია -->
+<!-- display: inline-block;-ის დამატების შემდეგ: სამივე div განთავსდა ერთ ხაზზე, ერთმანეთის გვერდიგვერდ, თუმცა შეინარჩუნეს მითითებული სიგანე და სიმაღლე -->
+
+
+<!-- 7) შექმენით ოთხი ელემენტი ერთ ხაზზე.
+
+თითოეულს გამოიყენეთ:
+- display: inline-block;
+- width: 100px;
+- height: 100px;
+- margin: 10px;
+- background-color;
+
+შეამცირეთ ბრაუზერის ფანჯრის სიგანე.
+
+დააკვირდით, რა ხდება მაშინ, როდესაც ყველა ელემენტი ერთ ხაზზე ვეღარ ეტევა. -->
+<head>
+    <style>
+        .item {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+
+</body>
+<!-- როდესაც ბრაუზერის ფანჯრის სიგანეს ვამცირებთ და ოთხივე ელემენტი ერთ ჰორიზონტალურ ხაზზე ვეღარ ეტევა, ის ელემენტები, რომლებიც ვეღარ დაეტია, ავტომატურად გადადიან მომდევნო ქვედა ხაზზე. ეს არის inline-block-ის ბუნებრივი ქცევა. -->
+</html>

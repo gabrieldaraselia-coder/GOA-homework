@@ -1,0 +1,19 @@
+.mainparent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    margin: 5px;
+}

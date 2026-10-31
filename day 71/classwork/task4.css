@@ -1,0 +1,18 @@
+.div1{
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    border:1px solid black;
+}
+
+p{
+    color: white;
+}
+
+.div2{
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    border:1px solid black;
+    transform: rotate(-30deg);
+}

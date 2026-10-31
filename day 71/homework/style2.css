@@ -1,0 +1,129 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.wrapper {
+    position: relative;
+    width: 600px;
+    height: 500px;
+}
+
+.container-green {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 30px;
+    left: 80px;
+    border: 2px solid #888;
+}
+
+.div-green {
+    background-color: #009b6b;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transform: rotate(45deg);
+}
+
+.dot-green {
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 76px;
+    left: 76px;
+}
+
+.container-purple {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    border: 2px solid #888;
+}
+
+.div-purple {
+    background-color: #800080;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 29px;
+    left: -75px;
+    transform: rotate(45deg);
+    
+}
+
+.dot-purple {
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    left: -5;
+}
+
+.container-blue {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    bottom: 30px;
+    left: 80px;
+    border: 2px solid #888;
+}
+
+.div-blue {
+    background-color: #0099ff;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    bottom: 19px;
+    left: 100px;
+    transform: rotate(45deg);
+}
+
+.dot-blue {
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 157px;
+    left: 155px;
+}
+
+.container-orange {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    bottom: 30px;
+    right: 80px;
+    border: 2px solid #888;
+}
+
+.div-orange {
+    background-color: #ffa500;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transform: rotate(45deg);
+}
+
+.dot-orange {
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 76px;
+    right: 76px;
+}

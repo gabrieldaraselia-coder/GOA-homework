@@ -1,0 +1,25 @@
+.parent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 3px solid black;
+    height: 800px;
+}
+
+.div{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    border: 3px solid black;
+    margin: 3px;
+}
+
+.Parentt{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: end;
+}
+

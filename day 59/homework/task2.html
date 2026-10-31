@@ -1,0 +1,122 @@
+<html>
+<!-- 8) შექმენით ორი ერთნაირი ელემენტი.
+
+ორივეს მიანიჭეთ:
+- width: 200px;
+- height: 100px;
+- padding: 20px;
+- margin: 20px;
+- background-color;
+
+პირველს გამოიყენეთ display: inline;
+მეორეს გამოიყენეთ display: inline-block;
+
+შეადარეთ, როგორ მოქმედებს width, height და margin თითოეულ მათგანზე. -->
+<head>
+    <style>
+        .box-inline {
+            display: inline;
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            margin: 20px;
+            background-color: gold;
+        }
+
+        .box-inline-block {
+            display: inline-block;
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            margin: 20px;
+            background-color: lightsalmon;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box-inline">Inline</div>
+    <div class="box-inline-block">Inline-Block</div>
+
+</body>
+<!-- display: inline;: width: 200px და height: 100px სრულიად იგნორირებულია. padding მუშაობს ტექსტის ირგვლივ, მაგრამ ვერტიკალური margin: 20px არ აწვება ზედა და ქვედა ელემენტებს.
+
+display: inline-block;: ზუსტად იღებს 200px სიგანეს და 100px სიმაღლეს. padding და margin ოთხივე მხრიდან ზუსტად და სრულყოფილად მუშაობს. -->
+
+
+<!-- 9) შექმენით პატარა გვერდი, რომელშიც გამოიყენებთ:
+
+- მინიმუმ 3 block ელემენტს
+- მინიმუმ 3 inline ელემენტს
+- მინიმუმ 3 inline-block ელემენტს
+
+თითოეულ ტიპს მიანიჭეთ განსხვავებული სტილი.
+
+ბოლოს ახსენით, რატომ შეარჩიეთ კონკრეტული display მნიშვნელობა თითოეული ელემენტისთვის.
+
+გვერდს უნდა ქონდეს აზრობრივი დატვირთვა. ანუ თქვენთვის სასურველ თემაზე შექმენით ვებსაიტი -->
+<head>
+    <style>
+        h1 {
+            display: block;
+            background-color: lightblue;
+            text-align: center;
+            padding: 10px;
+        }
+
+        p {
+            display: block;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        .footer {
+            display: block;
+            background-color: yellow;
+            padding: 10px;
+            text-align: center;
+        }
+
+        span {
+            display: inline;
+            color: red;
+        }
+
+        b {
+            display: inline;
+            color: green;
+        }
+
+        a {
+            display: inline;
+            color: blue;
+        }
+
+        .card {
+            display: inline-block;
+            width: 100px;
+            height: 80px;
+            background-color: lightgreen;
+            margin: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <h1>My Favorite Animals</h1>
+
+    <p>
+        I really love <span>animals</span>. They are <b>cute</b>. 
+        For more info <a href="https://en.wikipedia.org/wiki/Animal?ysclid=mu2usstzt8509458327">click here</a>.
+    </p>
+
+    <div class="card">Dog</div>
+    <div class="card">Cat</div>
+    <div class="card">Bear</div>
+
+    <div class="footer">Site Footer</div>
+
+</body>
+</html>

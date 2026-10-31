@@ -1,0 +1,14 @@
+div{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    animation-name: div;
+    animation-duration: 9s;
+    transform: rotate(0deg);
+    border-radius: 0;
+}
+
+@keyframes div{
+    from {width: 200px; height: 200px;}
+    to {width: 400px; height: 400px; transform: rotate(90deg); border-radius: 50%;}
+}

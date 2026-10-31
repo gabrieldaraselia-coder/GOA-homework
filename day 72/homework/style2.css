@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animated_div{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    animation-name: div;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    border-radius: 50%;
+}
+
+@keyframes div{
+    0% {transform: scale(0.5,0.5);}
+    50% {transform: scale(0.7,0.7);}
+    100% {transform: scale(1,1);}
+}

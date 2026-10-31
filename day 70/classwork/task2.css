@@ -1,0 +1,20 @@
+.box {
+    width: 130px;
+    height: 130px;
+    background-color: #8fe388; 
+    border: 2px solid black;   
+    margin-bottom: 20px;     
+}
+
+
+div p {
+    margin: 5px;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.box2 {
+    position: relative;
+    top: 30px;   
+    left: 25px; 
+}

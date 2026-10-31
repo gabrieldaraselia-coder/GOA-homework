@@ -1,0 +1,14 @@
+.animated_div{
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    animation-name: div;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate
+}
+
+@keyframes div{
+    from {transform: translateX(0px);}
+    to {transform: translateX(100px);}
+}

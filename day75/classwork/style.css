@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 1110px;
+    height: 58px;
+}
+
+.div1{
+    background-color: #F16718;
+    width: 40px;
+    height: 40px;
+}
+
+.div2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 100px;
+    background-color: #E8EFF2;
+    width: 175px;
+    height: 58px;
+    border-radius: 5px;
+    margin-left: 837px;
+}
+
+.p{
+    font-family: "Barlow", sans-serif;
+    width: 19px;
+    height: 11px;
+    color: white;
+    position: relative;
+    left: 4.43px;
+    top: 5.2px;
+}
+
+.p1{
+    font-family: "Barlow", sans-serif;
+    width: 150px;
+    height: 26px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
